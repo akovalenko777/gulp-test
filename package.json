@@ -17,12 +17,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akovalenko777/gulp-start.git"
+    "url": "git+https://github.com/akovalenko777/gulp-test.git"
   },
   "bugs": {
-    "url": "https://github.com/akovalenko777/gulp-start/issues"
+    "url": "https://github.com/akovalenko777/gulp-test/issues"
   },
-  "homepage": "https://github.com/akovalenko777/gulp-start#readme",
+  "homepage": "https://github.com/akovalenko777/gulp-test#readme",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
