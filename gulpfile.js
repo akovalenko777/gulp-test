@@ -1,6 +1,7 @@
 const { src, dest, watch, series, parallel } = require('gulp')
 const browserSync = require('browser-sync').create()
 const sass = require('gulp-sass')(require('sass'))
+const autoprefixer = require('gulp-autoprefixer')
 const rename = require('gulp-rename')
 const fileInclude = require('gulp-file-include')
 const terser = require('gulp-terser')
@@ -34,8 +35,12 @@ function serve(){
 function buildStyles() {
   return src(SRC_ASSETS+'scss/**/*.scss')
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename({
-      suffix: '.min'
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(autoprefixer({
+      grid:false,
+      flex:true,
+      overrideBrowserslist:["last 5 versions"],
+      cascade: true
     }))
     .pipe(dest(DIST_ASSETS+'css/'))
     .pipe(browserSync.stream())

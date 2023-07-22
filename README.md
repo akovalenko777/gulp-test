@@ -26,7 +26,7 @@
 3. For running project for local development, please execute next command:
 
    ```
-   npm start
+   npm run start
    ```
    or
 
@@ -36,11 +36,11 @@
 
 ### Scripts list
 
-`npm start` - starting local server for development by address http://localhost:3000/, watch changes
+`npm run start` - starting local server for development by address http://localhost:3000/, watch changes
 
-`npm build` - building project to the "dist" folder
+`npm run build` - building project to the "dist" folder
 
-`npm deploy` - deploying current project to the GitHub pages branch. Deploy is available ONLY after building the project.
+`npm run deploy` - deploying current project to the GitHub pages branch. Deploy is available ONLY after building the project.
 
 ### Gulp Tasks
 
